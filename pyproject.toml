@@ -1,0 +1,23 @@
+[tool.poetry]
+package-mode = false
+name = "automatizacao_pagamentos_internacionais"
+version = "0.1.0"
+description = ""
+authors = ["the_jota <jeremiassantana50@gmail.com>"]
+license = "MIT"
+
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^3.0.5"
+python-dotenv = "^1.2.2"
+mysql-connector-python = "^26.7.0"
+openpyxl = "^3.1.5"
+odfpy = "^1.4.1"
+requests = "^2.34.2"
+selenium = "^4.47.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

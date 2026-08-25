@@ -1,0 +1,16 @@
+# Ambiente virtual
+.venv/
+venv/
+
+# Variáveis de ambiente
+.env/
+
+# Arquivos gerados/cache
+.mypy_cache/
+__pycache__/
+.vscode/
+
+#arquivos temporarios
+
+* .temp
+* .tmp
