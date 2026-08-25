@@ -1,9 +1,9 @@
 # Ambiente virtual
+.env
 .venv/
 venv/
 
-# Variáveis de ambiente
-.env/
+
 
 # Arquivos gerados/cache
 .mypy_cache/
