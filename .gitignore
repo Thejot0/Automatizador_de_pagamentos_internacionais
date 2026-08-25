@@ -1,5 +1,4 @@
 # Ambiente virtual
-.env
 .venv/
 venv/
 
@@ -14,3 +13,4 @@ __pycache__/
 
 * .temp
 * .tmp
+env.env
