@@ -15,7 +15,7 @@ class BancoDados:
     
     def conectar_banco(self):
 
-        load_dotenv()
+        load_dotenv("env.env")
 
         SENHA_DB = os.getenv('DB_SENHA')
         DB_HOST = os.getenv('HOST_DB')
@@ -61,19 +61,20 @@ class BancoDados:
 
 
     def clientes_pendentes(self):
+        
         try:
             self.cursor.execute(
-
                 """ 
-                SELECT * FROM faturas WHERE status = "PENDENTE"
+                SELECT * FROM faturas WHERE status = 'PENDENTE' AND id > 0;
                 """
             )
 
+        
             return self.cursor.fetchall()
             
 
         except Exception as erro:
-            self.logger.exception(f'Aconteceu um erro inesperado ao tentar consultar dados do banco de dados: {erro}')  # noqa: TRY401
+            self.logger.exception(f'Aconteceu um erro inesperado ao tentar consultar dados do banco de dados: {erro}')  
 
 
 

@@ -1,7 +1,5 @@
 import os
 
-import pandas as pd
-
 from adm_logger.loggin import logger
 from manipulacao_dados.banco_dados import BancoDados
 
@@ -30,27 +28,28 @@ class DadosPlanilha:
 
         try:
             
+            dados_db = pd.read_sql(
 
-            sql = pd.read_sql(
                 """
-                SELECT * FROM faturas WHERE status = 'PENDENTE' AND id > 0
+                SELECT * FROM faturas
+                WHERE status = 'PENDENTE' AND id > 0
                 """,
                 self.dados_db.conexao
-                        
-                            )
-            
+            )
+                
+
 
             planilha_faturas = pd.read_excel('faturas_clientes.ods')
             
         
             juncao = pd.merge(
-                sql,
+                dados_db,
                 planilha_faturas.drop(columns=['id']),
                 on='Proprietario',
                 how='left'
             )
 
-            return juncao.to_excel(
+            juncao.to_excel(
                 'tabela_completa_faturas.xlsx',
                 index=False,
                 header=True,
@@ -76,5 +75,6 @@ class DadosPlanilha:
 if __name__  == "__main__":
     banco = DadosPlanilha()
     banco.dados_db.conectar_banco()
-    print(banco.juncao_dados())
+    banco.juncao_dados()
+    print(banco.planilha_de_faturas())
     banco.dados_db.desconectar_banco()

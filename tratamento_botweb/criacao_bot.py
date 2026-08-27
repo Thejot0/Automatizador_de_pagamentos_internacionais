@@ -11,7 +11,7 @@ from manipulacao_dados.banco_dados import BancoDados
 class WebBot:
     def __init__(self):
         self.banco_dados = BancoDados()
-        self.bot = None
+        self.bot = webdriver.Chrome()
         self.logger = logger
 
 
@@ -55,7 +55,7 @@ class WebBot:
                 if dados_clientes['status'] == 'PENDENTE':
 
                     self.bot.get("https://forms.gle/DY7RzsjNxfdcZQM4A")
-                    self.bot = webdriver.Chrome()
+                
 
                     nome_cliente = WebDriverWait(self.bot, 30).until(
                                     EC.presence_of_element_located((

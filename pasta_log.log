@@ -4481,3 +4481,1423 @@ PermissionError: [Errno 13] Permission denied
 25/08/2026 - [11:06:33][INFO]: Nenhum status pendente. Nenhum cliente foi cadastrado
 25/08/2026 - [11:06:49][INFO]: Nenhum status pendente. Nenhum cliente foi cadastrado
 25/08/2026 - [11:15:03][INFO]: Nenhum status pendente. Nenhum cliente foi cadastrado
+26/08/2026 - [11:17:35][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 27, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:17:35][ERROR]: Aconteceu um erro inesperado ao tentar consultar dados do banco de dados: 'NoneType' object has no attribute 'execute'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 65, in clientes_pendentes
+    self.cursor.execute(
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'execute'
+26/08/2026 - [11:17:35][ERROR]: Houve um erro inesperado ao tentar fechar conexão com o banco: 'NoneType' object has no attribute 'close'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 54, in desconectar_banco
+    self.cursor.close()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'close'
+26/08/2026 - [11:18:19][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 27, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:18:19][ERROR]: Aconteceu um erro inesperado ao tentar consultar dados do banco de dados: 'NoneType' object has no attribute 'execute'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 65, in clientes_pendentes
+    self.cursor.execute(
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'execute'
+26/08/2026 - [11:18:19][ERROR]: Houve um erro inesperado ao tentar fechar conexão com o banco: 'NoneType' object has no attribute 'close'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 54, in desconectar_banco
+    self.cursor.close()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'close'
+26/08/2026 - [11:19:16][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 27, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:19:16][ERROR]: Aconteceu um erro inesperado ao tentar consultar dados do banco de dados: 'NoneType' object has no attribute 'execute'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 65, in clientes_pendentes
+    self.cursor.execute(
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'execute'
+26/08/2026 - [11:19:16][ERROR]: Houve um erro inesperado ao tentar fechar conexão com o banco: 'NoneType' object has no attribute 'close'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 54, in desconectar_banco
+    self.cursor.close()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'close'
+26/08/2026 - [11:21:24][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 27, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:21:24][ERROR]: Aconteceu um erro inesperado ao tentar consultar dados do banco de dados: 'NoneType' object has no attribute 'execute'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 65, in clientes_pendentes
+    self.cursor.execute(
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'execute'
+26/08/2026 - [11:21:24][ERROR]: Houve um erro inesperado ao tentar fechar conexão com o banco: 'NoneType' object has no attribute 'close'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 54, in desconectar_banco
+    self.cursor.close()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'close'
+26/08/2026 - [11:21:56][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 27, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:21:56][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 27, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:21:56][ERROR]: Aconteceu um erro inesperado ao tentar consultar dados do banco de dados: 'NoneType' object has no attribute 'execute'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 66, in clientes_pendentes
+    self.cursor.execute(
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'execute'
+26/08/2026 - [11:21:56][ERROR]: Houve um erro inesperado ao tentar fechar conexão com o banco: 'NoneType' object has no attribute 'close'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 54, in desconectar_banco
+    self.cursor.close()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'close'
+26/08/2026 - [11:22:24][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 27, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:22:24][ERROR]: Aconteceu um erro inesperado ao tentar consultar dados do banco de dados: 'NoneType' object has no attribute 'execute'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 66, in clientes_pendentes
+    self.cursor.execute(
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'execute'
+26/08/2026 - [11:22:24][ERROR]: Houve um erro inesperado ao tentar fechar conexão com o banco: 'NoneType' object has no attribute 'close'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 54, in desconectar_banco
+    self.cursor.close()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'close'
+26/08/2026 - [11:22:38][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 27, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:22:38][ERROR]: Aconteceu um erro inesperado ao tentar consultar dados do banco de dados: 'NoneType' object has no attribute 'execute'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 66, in clientes_pendentes
+    self.cursor.execute(
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'execute'
+26/08/2026 - [11:22:38][ERROR]: Houve um erro inesperado ao tentar fechar conexão com o banco: 'NoneType' object has no attribute 'close'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 54, in desconectar_banco
+    self.cursor.close()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'close'
+26/08/2026 - [11:23:12][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 27, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:23:12][ERROR]: Aconteceu um erro inesperado ao tentar consultar dados do banco de dados: 'NoneType' object has no attribute 'execute'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 66, in clientes_pendentes
+    self.cursor.execute(
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'execute'
+26/08/2026 - [11:23:12][ERROR]: Houve um erro inesperado ao tentar fechar conexão com o banco: 'NoneType' object has no attribute 'close'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 54, in desconectar_banco
+    self.cursor.close()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'close'
+26/08/2026 - [11:24:02][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 27, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:24:02][ERROR]: Aconteceu um erro inesperado ao tentar consultar dados do banco de dados: 'NoneType' object has no attribute 'execute'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 66, in clientes_pendentes
+    self.cursor.execute(
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'execute'
+26/08/2026 - [11:24:02][ERROR]: Houve um erro inesperado ao tentar fechar conexão com o banco: 'NoneType' object has no attribute 'close'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 54, in desconectar_banco
+    self.cursor.close()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'close'
+26/08/2026 - [11:24:19][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 27, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:24:19][ERROR]: Aconteceu um erro inesperado ao tentar consultar dados do banco de dados: 'NoneType' object has no attribute 'execute'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 66, in clientes_pendentes
+    self.cursor.execute(
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'execute'
+26/08/2026 - [11:24:19][ERROR]: Houve um erro inesperado ao tentar fechar conexão com o banco: 'NoneType' object has no attribute 'close'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 54, in desconectar_banco
+    self.cursor.close()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'close'
+26/08/2026 - [11:24:57][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 27, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:24:57][ERROR]: Aconteceu um erro inesperado ao tentar consultar dados do banco de dados: 'NoneType' object has no attribute 'execute'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 66, in clientes_pendentes
+    self.cursor.execute(
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'execute'
+26/08/2026 - [11:24:57][ERROR]: Houve um erro inesperado ao tentar fechar conexão com o banco: 'NoneType' object has no attribute 'close'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 54, in desconectar_banco
+    self.cursor.close()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'close'
+26/08/2026 - [11:26:45][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 28, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:26:45][ERROR]: Aconteceu um erro inesperado ao tentar consultar dados do banco de dados: read_sql() missing 1 required positional argument: 'con'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 67, in clientes_pendentes
+    sql = pd.read_sql(
+          ^^^^^^^^^^^^
+TypeError: read_sql() missing 1 required positional argument: 'con'
+26/08/2026 - [11:26:45][ERROR]: Houve um erro inesperado ao tentar fechar conexão com o banco: 'NoneType' object has no attribute 'close'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 55, in desconectar_banco
+    self.cursor.close()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'close'
+26/08/2026 - [11:27:02][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 28, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:27:02][ERROR]: Aconteceu um erro inesperado ao tentar consultar dados do banco de dados: read_sql() missing 1 required positional argument: 'con'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 67, in clientes_pendentes
+    sql = pd.read_sql(
+          ^^^^^^^^^^^^
+TypeError: read_sql() missing 1 required positional argument: 'con'
+26/08/2026 - [11:27:02][ERROR]: Houve um erro inesperado ao tentar fechar conexão com o banco: 'NoneType' object has no attribute 'close'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 55, in desconectar_banco
+    self.cursor.close()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'close'
+26/08/2026 - [11:27:55][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 28, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:27:55][ERROR]: Aconteceu um erro inesperado ao tentar consultar dados do banco de dados: 'NoneType' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 67, in clientes_pendentes
+    sql = pd.read_sql(
+          ^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/pandas/io/sql.py", line 702, in read_sql
+    return pandas_sql.read_query(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/pandas/io/sql.py", line 2809, in read_query
+    cursor = self.execute(sql, params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/pandas/io/sql.py", line 2743, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'cursor'
+26/08/2026 - [11:27:55][ERROR]: Houve um erro inesperado ao tentar fechar conexão com o banco: 'NoneType' object has no attribute 'close'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 55, in desconectar_banco
+    self.cursor.close()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'close'
+26/08/2026 - [11:31:01][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 28, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:31:01][ERROR]: Aconteceu um erro inesperado ao tentar consultar dados do banco de dados: 'NoneType' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 67, in clientes_pendentes
+    dados = self.conexao.cursor(
+            ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'cursor'
+26/08/2026 - [11:31:01][ERROR]: Houve um erro inesperado ao tentar fechar conexão com o banco: 'NoneType' object has no attribute 'close'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 55, in desconectar_banco
+    self.cursor.close()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'close'
+26/08/2026 - [11:32:58][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 28, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:32:58][ERROR]: Aconteceu um erro inesperado ao tentar consultar dados do banco de dados: 'NoneType' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 67, in clientes_pendentes
+    dados = self.conexao.cursor(
+            ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'cursor'
+26/08/2026 - [11:33:09][ERROR]: Aconteceu um erro inesperado ao tentar consultar dados do banco de dados: 'NoneType' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 67, in clientes_pendentes
+    dados = self.conexao.cursor(
+            ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'cursor'
+26/08/2026 - [11:34:53][ERROR]: Aconteceu um erro inesperado ao tentar consultar dados do banco de dados: 'NoneType' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 67, in clientes_pendentes
+    dados = self.conexao.cursor(
+            ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'cursor'
+26/08/2026 - [11:37:26][ERROR]: Aconteceu um erro inesperado ao tentar consultar dados do banco de dados: 'NoneType' object is not callable
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 67, in clientes_pendentes
+    self.cursor(
+TypeError: 'NoneType' object is not callable
+26/08/2026 - [11:37:36][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 28, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:37:36][ERROR]: Aconteceu um erro inesperado ao tentar consultar dados do banco de dados: 'NoneType' object is not callable
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 67, in clientes_pendentes
+    self.cursor(
+TypeError: 'NoneType' object is not callable
+26/08/2026 - [11:37:36][ERROR]: Houve um erro inesperado ao tentar fechar conexão com o banco: 'NoneType' object has no attribute 'close'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 55, in desconectar_banco
+    self.cursor.close()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'close'
+26/08/2026 - [11:38:10][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 28, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:38:11][ERROR]: Aconteceu um erro inesperado ao tentar consultar dados do banco de dados: 'NoneType' object is not callable
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 67, in clientes_pendentes
+    self.cursor(
+TypeError: 'NoneType' object is not callable
+26/08/2026 - [11:38:11][ERROR]: Houve um erro inesperado ao tentar fechar conexão com o banco: 'NoneType' object has no attribute 'close'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 55, in desconectar_banco
+    self.cursor.close()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'close'
+26/08/2026 - [11:39:09][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 28, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:39:09][ERROR]: Aconteceu um erro inesperado ao tentar consultar dados do banco de dados: 'NoneType' object has no attribute 'execute'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 67, in clientes_pendentes
+    self.cursor.execute(
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'execute'
+26/08/2026 - [11:39:09][ERROR]: Houve um erro inesperado ao tentar fechar conexão com o banco: 'NoneType' object has no attribute 'close'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 55, in desconectar_banco
+    self.cursor.close()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'close'
+26/08/2026 - [11:43:20][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 28, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:43:20][ERROR]: Aconteceu um erro inesperado ao tentar consultar dados do banco de dados: 'NoneType' object has no attribute 'execute'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 67, in clientes_pendentes
+    self.cursor.execute(
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'execute'
+26/08/2026 - [11:43:20][ERROR]: Houve um erro inesperado ao tentar fechar conexão com o banco: 'NoneType' object has no attribute 'close'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 55, in desconectar_banco
+    self.cursor.close()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'close'
+26/08/2026 - [11:44:13][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 28, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:44:13][ERROR]: Aconteceu um erro inesperado ao tentar consultar dados do banco de dados: 'NoneType' object has no attribute 'execute'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 67, in clientes_pendentes
+    self.cursor.execute(
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'execute'
+26/08/2026 - [11:44:13][ERROR]: Houve um erro inesperado ao tentar fechar conexão com o banco: 'NoneType' object has no attribute 'close'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 55, in desconectar_banco
+    self.cursor.close()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'close'
+26/08/2026 - [11:44:24][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 28, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:44:24][ERROR]: Aconteceu um erro inesperado ao tentar consultar dados do banco de dados: 'NoneType' object has no attribute 'execute'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 67, in clientes_pendentes
+    self.cursor.execute(
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'execute'
+26/08/2026 - [11:44:24][ERROR]: Houve um erro inesperado ao tentar fechar conexão com o banco: 'NoneType' object has no attribute 'close'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 55, in desconectar_banco
+    self.cursor.close()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'close'
+26/08/2026 - [11:46:10][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 28, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:46:10][ERROR]: Aconteceu um erro inesperado ao tentar consultar dados do banco de dados: 'NoneType' object has no attribute 'execute'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 67, in clientes_pendentes
+    self.cursor.execute(
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'execute'
+26/08/2026 - [11:46:10][ERROR]: Houve um erro inesperado ao tentar fechar conexão com o banco: 'NoneType' object has no attribute 'close'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 55, in desconectar_banco
+    self.cursor.close()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'close'
+26/08/2026 - [11:46:33][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 28, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:46:33][ERROR]: Aconteceu um erro inesperado ao tentar consultar dados do banco de dados: 'NoneType' object has no attribute 'execute'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 67, in clientes_pendentes
+    self.cursor.execute(
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'execute'
+26/08/2026 - [11:48:21][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 28, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:48:21][ERROR]: Houve um erro inesperado ao tentar juntar dados: 'NoneType' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_planilha/dados_planilha.py", line 34, in juncao_dados
+    sql = pd.read_sql(
+          ^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/pandas/io/sql.py", line 702, in read_sql
+    return pandas_sql.read_query(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/pandas/io/sql.py", line 2809, in read_query
+    cursor = self.execute(sql, params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/pandas/io/sql.py", line 2743, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'cursor'
+26/08/2026 - [11:49:58][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 28, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:49:58][ERROR]: Houve um erro inesperado ao tentar juntar dados: 'NoneType' object has no attribute 'execute'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_planilha/dados_planilha.py", line 33, in juncao_dados
+    sql = self.dados_db.cursor.execute(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'execute'
+26/08/2026 - [11:52:53][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 28, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:52:53][ERROR]: Aconteceu um erro inesperado ao tentar consultar dados do banco de dados: type object 'str' has no attribute 'execute'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 67, in clientes_pendentes
+    self.cursor.execute(
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'str' has no attribute 'execute'
+26/08/2026 - [11:52:53][ERROR]: Houve um erro inesperado ao tentar fechar conexão com o banco: type object 'str' has no attribute 'close'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 55, in desconectar_banco
+    self.cursor.close()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: type object 'str' has no attribute 'close'
+26/08/2026 - [11:54:41][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 28, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:54:41][ERROR]: Aconteceu um erro inesperado ao tentar consultar dados do banco de dados: 'NoneType' object has no attribute 'execute'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 67, in clientes_pendentes
+    self.cursor.execute(
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'execute'
+26/08/2026 - [11:54:41][ERROR]: Houve um erro inesperado ao tentar fechar conexão com o banco: 'NoneType' object has no attribute 'close'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 55, in desconectar_banco
+    self.cursor.close()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'close'
+26/08/2026 - [11:54:45][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 28, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:54:45][ERROR]: Houve um erro inesperado ao tentar juntar dados: 'NoneType' object has no attribute 'execute'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_planilha/dados_planilha.py", line 33, in juncao_dados
+    sql = self.dados_db.cursor.execute(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'execute'
+26/08/2026 - [11:55:18][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 28, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:55:18][ERROR]: Houve um erro inesperado ao tentar juntar dados: 'NoneType' object has no attribute 'execute'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_planilha/dados_planilha.py", line 33, in juncao_dados
+    sql = self.dados_db.cursor.execute(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'execute'
+26/08/2026 - [11:56:37][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 28, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:56:37][ERROR]: Houve um erro inesperado ao tentar juntar dados: 'NoneType' object has no attribute 'execute'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_planilha/dados_planilha.py", line 33, in juncao_dados
+    sql = self.dados_db.cursor.execute(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'execute'
+26/08/2026 - [11:56:57][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 28, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:56:57][ERROR]: Houve um erro inesperado ao tentar juntar dados: 'NoneType' object has no attribute 'execute'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_planilha/dados_planilha.py", line 33, in juncao_dados
+    sql = self.dados_db.cursor.execute(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'execute'
+26/08/2026 - [11:57:15][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 28, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:57:15][ERROR]: Houve um erro inesperado ao tentar juntar dados: 'NoneType' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_planilha/dados_planilha.py", line 33, in juncao_dados
+    sql = self.dados_db.conexao.cursor.execute(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'cursor'
+26/08/2026 - [11:58:21][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 28, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:58:21][ERROR]: Houve um erro inesperado ao tentar juntar dados: read_sql() missing 1 required positional argument: 'con'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_planilha/dados_planilha.py", line 33, in juncao_dados
+    sql = pd.read_sql(
+          ^^^^^^^^^^^^
+TypeError: read_sql() missing 1 required positional argument: 'con'
+26/08/2026 - [11:58:36][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 28, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [11:58:36][ERROR]: Houve um erro inesperado ao tentar juntar dados: 'NoneType' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_planilha/dados_planilha.py", line 33, in juncao_dados
+    sql = pd.read_sql(
+          ^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/pandas/io/sql.py", line 702, in read_sql
+    return pandas_sql.read_query(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/pandas/io/sql.py", line 2809, in read_query
+    cursor = self.execute(sql, params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/pandas/io/sql.py", line 2743, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'cursor'
+26/08/2026 - [12:01:32][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 28, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [12:01:32][ERROR]: Houve um erro inesperado ao tentar juntar dados: 'NoneType' object has no attribute 'execute'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_planilha/dados_planilha.py", line 33, in juncao_dados
+    self.dados_db.cursor.execute(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'execute'
+26/08/2026 - [12:04:23][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 28, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [12:04:23][ERROR]: Houve um erro inesperado ao tentar juntar dados: 'NoneType' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_planilha/dados_planilha.py", line 33, in juncao_dados
+    dados_db = pd.read_sql(
+               ^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/pandas/io/sql.py", line 702, in read_sql
+    return pandas_sql.read_query(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/pandas/io/sql.py", line 2809, in read_query
+    cursor = self.execute(sql, params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/pandas/io/sql.py", line 2743, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'cursor'
+26/08/2026 - [12:05:53][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 28, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [12:05:53][ERROR]: Houve um erro inesperado ao tentar juntar dados: 'NoneType' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_planilha/dados_planilha.py", line 33, in juncao_dados
+    dados_db = pd.read_sql(
+               ^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/pandas/io/sql.py", line 702, in read_sql
+    return pandas_sql.read_query(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/pandas/io/sql.py", line 2809, in read_query
+    cursor = self.execute(sql, params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/pandas/io/sql.py", line 2743, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'cursor'
+26/08/2026 - [12:06:59][ERROR]: Houve um erro inesperado ao tentar se conectar ao banco de dados: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_dados/banco_dados.py", line 28, in conectar_banco
+    self.conexao = mysql.connector.connect(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/pooling.py", line 323, in connect
+    return MySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/connection.py", line 185, in __init__
+    self.connect(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 1601, in connect
+    self.config(**kwargs)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/mysql/connector/abstracts.py", line 705, in config
+    self._port = int(config["port"])
+                 ^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+26/08/2026 - [12:06:59][ERROR]: Houve um erro inesperado ao tentar juntar dados: 'NoneType' object has no attribute 'cursor'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/manipulacao_planilha/dados_planilha.py", line 33, in juncao_dados
+    dados_db = pd.read_sql(
+               ^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/pandas/io/sql.py", line 702, in read_sql
+    return pandas_sql.read_query(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/pandas/io/sql.py", line 2809, in read_query
+    cursor = self.execute(sql, params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/pandas/io/sql.py", line 2743, in execute
+    cur = self.con.cursor()
+          ^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'cursor'
+26/08/2026 - [12:10:27][INFO]: package: mysql.connector.plugins
+26/08/2026 - [12:10:27][INFO]: plugin_name: caching_sha2_password
+26/08/2026 - [12:10:27][INFO]: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+26/08/2026 - [12:10:27][INFO]: package: mysql.connector.plugins
+26/08/2026 - [12:10:27][INFO]: plugin_name: mysql_native_password
+26/08/2026 - [12:10:27][INFO]: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+26/08/2026 - [12:10:27][INFO]: O banco de dados foi conectado!!!
+26/08/2026 - [12:10:28][INFO]: Banco de dados desconectado
+26/08/2026 - [12:10:33][INFO]: package: mysql.connector.plugins
+26/08/2026 - [12:10:33][INFO]: plugin_name: caching_sha2_password
+26/08/2026 - [12:10:33][INFO]: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+26/08/2026 - [12:10:33][INFO]: package: mysql.connector.plugins
+26/08/2026 - [12:10:33][INFO]: plugin_name: mysql_native_password
+26/08/2026 - [12:10:33][INFO]: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+26/08/2026 - [12:10:33][INFO]: O banco de dados foi conectado!!!
+26/08/2026 - [12:10:33][INFO]: Banco de dados desconectado
+26/08/2026 - [12:11:12][INFO]: package: mysql.connector.plugins
+26/08/2026 - [12:11:12][INFO]: plugin_name: caching_sha2_password
+26/08/2026 - [12:11:12][INFO]: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+26/08/2026 - [12:11:12][INFO]: package: mysql.connector.plugins
+26/08/2026 - [12:11:12][INFO]: plugin_name: mysql_native_password
+26/08/2026 - [12:11:12][INFO]: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+26/08/2026 - [12:11:12][INFO]: O banco de dados foi conectado!!!
+26/08/2026 - [12:11:12][INFO]: Banco de dados desconectado
+26/08/2026 - [12:11:16][INFO]: package: mysql.connector.plugins
+26/08/2026 - [12:11:16][INFO]: plugin_name: caching_sha2_password
+26/08/2026 - [12:11:16][INFO]: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+26/08/2026 - [12:11:16][INFO]: package: mysql.connector.plugins
+26/08/2026 - [12:11:16][INFO]: plugin_name: mysql_native_password
+26/08/2026 - [12:11:16][INFO]: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+26/08/2026 - [12:11:16][INFO]: O banco de dados foi conectado!!!
+26/08/2026 - [12:11:16][INFO]: Banco de dados desconectado
+26/08/2026 - [12:11:29][INFO]: package: mysql.connector.plugins
+26/08/2026 - [12:11:29][INFO]: plugin_name: caching_sha2_password
+26/08/2026 - [12:11:29][INFO]: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+26/08/2026 - [12:11:29][INFO]: package: mysql.connector.plugins
+26/08/2026 - [12:11:29][INFO]: plugin_name: mysql_native_password
+26/08/2026 - [12:11:29][INFO]: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+26/08/2026 - [12:11:29][INFO]: O banco de dados foi conectado!!!
+26/08/2026 - [12:11:29][INFO]: Banco de dados desconectado
+26/08/2026 - [12:12:06][INFO]: package: mysql.connector.plugins
+26/08/2026 - [12:12:06][INFO]: plugin_name: caching_sha2_password
+26/08/2026 - [12:12:06][INFO]: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+26/08/2026 - [12:12:06][INFO]: package: mysql.connector.plugins
+26/08/2026 - [12:12:06][INFO]: plugin_name: mysql_native_password
+26/08/2026 - [12:12:06][INFO]: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+26/08/2026 - [12:12:06][INFO]: O banco de dados foi conectado!!!
+26/08/2026 - [12:12:06][INFO]: Banco de dados desconectado
+26/08/2026 - [12:12:55][INFO]: package: mysql.connector.plugins
+26/08/2026 - [12:12:55][INFO]: plugin_name: caching_sha2_password
+26/08/2026 - [12:12:55][INFO]: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+26/08/2026 - [12:12:55][INFO]: package: mysql.connector.plugins
+26/08/2026 - [12:12:55][INFO]: plugin_name: mysql_native_password
+26/08/2026 - [12:12:55][INFO]: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+26/08/2026 - [12:12:55][INFO]: O banco de dados foi conectado!!!
+26/08/2026 - [12:12:56][INFO]: Banco de dados desconectado
+26/08/2026 - [12:14:11][INFO]: package: mysql.connector.plugins
+26/08/2026 - [12:14:11][INFO]: plugin_name: caching_sha2_password
+26/08/2026 - [12:14:11][INFO]: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+26/08/2026 - [12:14:11][INFO]: package: mysql.connector.plugins
+26/08/2026 - [12:14:11][INFO]: plugin_name: mysql_native_password
+26/08/2026 - [12:14:11][INFO]: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+26/08/2026 - [12:14:11][INFO]: O banco de dados foi conectado!!!
+26/08/2026 - [12:14:12][INFO]: Banco de dados desconectado
+26/08/2026 - [12:49:53][ERROR]: Houve um erro desconhecido ao tentar cadastrar 1 | Google. Erro: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/tratamento_botweb/criacao_bot.py", line 57, in cadastro_clientes
+    self.bot.get("https://forms.gle/DY7RzsjNxfdcZQM4A")
+    ^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+26/08/2026 - [12:50:28][ERROR]: Houve um erro desconhecido ao tentar cadastrar 1 | Google. Erro: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/tratamento_botweb/criacao_bot.py", line 57, in cadastro_clientes
+    self.bot.get("https://forms.gle/DY7RzsjNxfdcZQM4A")
+    ^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+26/08/2026 - [12:52:38][ERROR]: Houve um erro desconhecido ao tentar cadastrar 1 | Google. Erro: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/tratamento_botweb/criacao_bot.py", line 57, in cadastro_clientes
+    self.bot.get("https://forms.gle/DY7RzsjNxfdcZQM4A")
+    ^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+26/08/2026 - [12:55:42][ERROR]: Houve um erro desconhecido ao tentar cadastrar 1 | Google. Erro: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/tratamento_botweb/criacao_bot.py", line 57, in cadastro_clientes
+    self.bot.get("https://forms.gle/DY7RzsjNxfdcZQM4A")
+    ^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+26/08/2026 - [12:58:05][ERROR]: Houve um erro desconhecido ao tentar cadastrar 1 | Google. Erro: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/tratamento_botweb/criacao_bot.py", line 57, in cadastro_clientes
+    self.bot.get("https://forms.gle/DY7RzsjNxfdcZQM4A")
+    ^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+26/08/2026 - [13:03:51][INFO]: Processando cadastro do proprietario: 1 | Google
+26/08/2026 - [13:03:53][INFO]: package: mysql.connector.plugins
+26/08/2026 - [13:03:53][INFO]: plugin_name: caching_sha2_password
+26/08/2026 - [13:03:53][INFO]: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+26/08/2026 - [13:03:53][INFO]: package: mysql.connector.plugins
+26/08/2026 - [13:03:53][INFO]: plugin_name: mysql_native_password
+26/08/2026 - [13:03:53][INFO]: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+26/08/2026 - [13:03:53][INFO]: O banco de dados foi conectado!!!
+26/08/2026 - [13:03:53][INFO]: Status da fatura 1 atualizado para PAGO
+26/08/2026 - [13:03:53][INFO]: Banco de dados desconectado
+26/08/2026 - [13:03:53][INFO]: Status do cliente 1 | Google atualizado com successo!!
+26/08/2026 - [13:03:53][INFO]: Cliente 1 | Google cadastrado com sucesso!!
+26/08/2026 - [13:03:53][INFO]: Status do cliente 1 | Google Atualizada com sucesso!!
+26/08/2026 - [13:04:01][INFO]: Processando cadastro do proprietario: 2 | Microsoft
+26/08/2026 - [13:04:02][INFO]: O banco de dados foi conectado!!!
+26/08/2026 - [13:04:02][INFO]: Status da fatura 2 atualizado para PAGO
+26/08/2026 - [13:04:02][INFO]: Banco de dados desconectado
+26/08/2026 - [13:04:02][INFO]: Status do cliente 2 | Microsoft atualizado com successo!!
+26/08/2026 - [13:04:02][INFO]: Cliente 2 | Microsoft cadastrado com sucesso!!
+26/08/2026 - [13:04:02][INFO]: Status do cliente 2 | Microsoft Atualizada com sucesso!!
+26/08/2026 - [13:04:08][INFO]: Processando cadastro do proprietario: 3 | Amazon
+26/08/2026 - [13:04:10][INFO]: O banco de dados foi conectado!!!
+26/08/2026 - [13:04:10][INFO]: Status da fatura 3 atualizado para PAGO
+26/08/2026 - [13:04:10][INFO]: Banco de dados desconectado
+26/08/2026 - [13:04:10][INFO]: Status do cliente 3 | Amazon atualizado com successo!!
+26/08/2026 - [13:04:10][INFO]: Cliente 3 | Amazon cadastrado com sucesso!!
+26/08/2026 - [13:04:10][INFO]: Status do cliente 3 | Amazon Atualizada com sucesso!!
+26/08/2026 - [13:04:15][INFO]: Processando cadastro do proprietario: 4 | Proprietario_teste
+26/08/2026 - [13:04:17][INFO]: O banco de dados foi conectado!!!
+26/08/2026 - [13:04:17][INFO]: Status da fatura 4 atualizado para PAGO
+26/08/2026 - [13:04:17][INFO]: Banco de dados desconectado
+26/08/2026 - [13:04:17][INFO]: Status do cliente 4 | Proprietario_teste atualizado com successo!!
+26/08/2026 - [13:04:17][INFO]: Cliente 4 | Proprietario_teste cadastrado com sucesso!!
+26/08/2026 - [13:04:17][INFO]: Status do cliente 4 | Proprietario_teste Atualizada com sucesso!!
+26/08/2026 - [13:04:21][ERROR]: Error terminating service process.
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/selenium/webdriver/common/service.py", line 182, in _terminate_process
+    self.process.terminate()
+  File "/usr/lib/python3.12/subprocess.py", line 2211, in terminate
+    self.send_signal(signal.SIGTERM)
+  File "/usr/lib/python3.12/subprocess.py", line 2203, in send_signal
+    os.kill(self.pid, sig)
+PermissionError: [Errno 13] Permission denied
+27/08/2026 - [12:00:12][ERROR]: Houve um erro desconhecido ao tentar cadastrar 1 | Google. Erro: Message: element not interactable
+  (Session info: chrome=150.0.7871.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x5fa4f53deaea <unknown>
+#1 0x5fa4f4dd32c0 <unknown>
+#2 0x5fa4f4e23631 <unknown>
+#3 0x5fa4f4e2181e <unknown>
+#4 0x5fa4f4e1cdf8 <unknown>
+#5 0x5fa4f4e702ae <unknown>
+#6 0x5fa4f4e1b5a9 <unknown>
+#7 0x5fa4f4e1c3c1 <unknown>
+#8 0x5fa4f53a43db <unknown>
+#9 0x5fa4f53a30e4 <unknown>
+#10 0x5fa4f538f784 <unknown>
+#11 0x5fa4f53a3882 <unknown>
+#12 0x5fa4f5379467 <unknown>
+#13 0x5fa4f53cb148 <unknown>
+#14 0x5fa4f53cb336 <unknown>
+#15 0x5fa4f53dd657 <unknown>
+#16 0x79eebda2daa4 <unknown>
+#17 0x79eebdabac6c <unknown>
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/tratamento_botweb/criacao_bot.py", line 65, in cadastro_clientes
+    nome_cliente.send_keys(dados_clientes['Proprietario'])
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 276, in send_keys
+    self._execute(
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 504, in execute
+    self.error_handler.check_response(response)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=150.0.7871.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x5fa4f53deaea <unknown>
+#1 0x5fa4f4dd32c0 <unknown>
+#2 0x5fa4f4e23631 <unknown>
+#3 0x5fa4f4e2181e <unknown>
+#4 0x5fa4f4e1cdf8 <unknown>
+#5 0x5fa4f4e702ae <unknown>
+#6 0x5fa4f4e1b5a9 <unknown>
+#7 0x5fa4f4e1c3c1 <unknown>
+#8 0x5fa4f53a43db <unknown>
+#9 0x5fa4f53a30e4 <unknown>
+#10 0x5fa4f538f784 <unknown>
+#11 0x5fa4f53a3882 <unknown>
+#12 0x5fa4f5379467 <unknown>
+#13 0x5fa4f53cb148 <unknown>
+#14 0x5fa4f53cb336 <unknown>
+#15 0x5fa4f53dd657 <unknown>
+#16 0x79eebda2daa4 <unknown>
+#17 0x79eebdabac6c <unknown>
+
+27/08/2026 - [12:00:34][INFO]: Processando cadastro do proprietario: 1 | Google
+27/08/2026 - [12:00:35][INFO]: package: mysql.connector.plugins
+27/08/2026 - [12:00:35][INFO]: plugin_name: caching_sha2_password
+27/08/2026 - [12:00:35][INFO]: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+27/08/2026 - [12:00:35][INFO]: package: mysql.connector.plugins
+27/08/2026 - [12:00:35][INFO]: plugin_name: mysql_native_password
+27/08/2026 - [12:00:35][INFO]: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+27/08/2026 - [12:00:35][INFO]: O banco de dados foi conectado!!!
+27/08/2026 - [12:00:35][INFO]: Status da fatura 1 atualizado para PAGO
+27/08/2026 - [12:00:35][INFO]: Banco de dados desconectado
+27/08/2026 - [12:00:35][INFO]: Status do cliente 1 | Google atualizado com successo!!
+27/08/2026 - [12:00:35][INFO]: Cliente 1 | Google cadastrado com sucesso!!
+27/08/2026 - [12:00:35][INFO]: Status do cliente 1 | Google Atualizada com sucesso!!
+27/08/2026 - [12:00:38][INFO]: Processando cadastro do proprietario: 2 | Microsoft
+27/08/2026 - [12:00:39][INFO]: O banco de dados foi conectado!!!
+27/08/2026 - [12:00:39][INFO]: Status da fatura 2 atualizado para PAGO
+27/08/2026 - [12:00:39][INFO]: Banco de dados desconectado
+27/08/2026 - [12:00:39][INFO]: Status do cliente 2 | Microsoft atualizado com successo!!
+27/08/2026 - [12:00:39][INFO]: Cliente 2 | Microsoft cadastrado com sucesso!!
+27/08/2026 - [12:00:39][INFO]: Status do cliente 2 | Microsoft Atualizada com sucesso!!
+27/08/2026 - [12:00:42][INFO]: Processando cadastro do proprietario: 3 | Amazon
+27/08/2026 - [12:00:43][INFO]: O banco de dados foi conectado!!!
+27/08/2026 - [12:00:43][INFO]: Status da fatura 3 atualizado para PAGO
+27/08/2026 - [12:00:43][INFO]: Banco de dados desconectado
+27/08/2026 - [12:00:43][INFO]: Status do cliente 3 | Amazon atualizado com successo!!
+27/08/2026 - [12:00:43][INFO]: Cliente 3 | Amazon cadastrado com sucesso!!
+27/08/2026 - [12:00:43][INFO]: Status do cliente 3 | Amazon Atualizada com sucesso!!
+27/08/2026 - [12:00:47][INFO]: Processando cadastro do proprietario: 4 | Proprietario_teste
+27/08/2026 - [12:00:47][INFO]: O banco de dados foi conectado!!!
+27/08/2026 - [12:00:47][INFO]: Status da fatura 4 atualizado para PAGO
+27/08/2026 - [12:00:47][INFO]: Banco de dados desconectado
+27/08/2026 - [12:00:47][INFO]: Status do cliente 4 | Proprietario_teste atualizado com successo!!
+27/08/2026 - [12:00:47][INFO]: Cliente 4 | Proprietario_teste cadastrado com sucesso!!
+27/08/2026 - [12:00:47][INFO]: Status do cliente 4 | Proprietario_teste Atualizada com sucesso!!
+27/08/2026 - [12:02:09][ERROR]: Houve um erro desconhecido ao tentar cadastrar 1 | Google. Erro: Message: element not interactable
+  (Session info: chrome=150.0.7871.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x64f7f2733aea <unknown>
+#1 0x64f7f21282c0 <unknown>
+#2 0x64f7f2178631 <unknown>
+#3 0x64f7f217681e <unknown>
+#4 0x64f7f2171df8 <unknown>
+#5 0x64f7f21c52ae <unknown>
+#6 0x64f7f21705a9 <unknown>
+#7 0x64f7f21713c1 <unknown>
+#8 0x64f7f26f93db <unknown>
+#9 0x64f7f26f80e4 <unknown>
+#10 0x64f7f26e4784 <unknown>
+#11 0x64f7f26f8882 <unknown>
+#12 0x64f7f26ce467 <unknown>
+#13 0x64f7f2720148 <unknown>
+#14 0x64f7f2720336 <unknown>
+#15 0x64f7f2732657 <unknown>
+#16 0x70030adadaa4 <unknown>
+#17 0x70030ae3ac6c <unknown>
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/tratamento_botweb/criacao_bot.py", line 65, in cadastro_clientes
+    nome_cliente.send_keys(dados_clientes['Proprietario'])
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 276, in send_keys
+    self._execute(
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py", line 508, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 504, in execute
+    self.error_handler.check_response(response)
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=150.0.7871.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+#0 0x64f7f2733aea <unknown>
+#1 0x64f7f21282c0 <unknown>
+#2 0x64f7f2178631 <unknown>
+#3 0x64f7f217681e <unknown>
+#4 0x64f7f2171df8 <unknown>
+#5 0x64f7f21c52ae <unknown>
+#6 0x64f7f21705a9 <unknown>
+#7 0x64f7f21713c1 <unknown>
+#8 0x64f7f26f93db <unknown>
+#9 0x64f7f26f80e4 <unknown>
+#10 0x64f7f26e4784 <unknown>
+#11 0x64f7f26f8882 <unknown>
+#12 0x64f7f26ce467 <unknown>
+#13 0x64f7f2720148 <unknown>
+#14 0x64f7f2720336 <unknown>
+#15 0x64f7f2732657 <unknown>
+#16 0x70030adadaa4 <unknown>
+#17 0x70030ae3ac6c <unknown>
+
+27/08/2026 - [12:02:09][ERROR]: Error terminating service process.
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/selenium/webdriver/common/service.py", line 182, in _terminate_process
+    self.process.terminate()
+  File "/usr/lib/python3.12/subprocess.py", line 2211, in terminate
+    self.send_signal(signal.SIGTERM)
+  File "/usr/lib/python3.12/subprocess.py", line 2203, in send_signal
+    os.kill(self.pid, sig)
+PermissionError: [Errno 13] Permission denied
+27/08/2026 - [12:02:26][INFO]: Processando cadastro do proprietario: 1 | Google
+27/08/2026 - [12:02:27][INFO]: package: mysql.connector.plugins
+27/08/2026 - [12:02:27][INFO]: plugin_name: caching_sha2_password
+27/08/2026 - [12:02:27][INFO]: AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+27/08/2026 - [12:02:27][INFO]: package: mysql.connector.plugins
+27/08/2026 - [12:02:27][INFO]: plugin_name: mysql_native_password
+27/08/2026 - [12:02:27][INFO]: AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+27/08/2026 - [12:02:27][INFO]: O banco de dados foi conectado!!!
+27/08/2026 - [12:02:27][INFO]: Status da fatura 1 atualizado para PAGO
+27/08/2026 - [12:02:27][INFO]: Banco de dados desconectado
+27/08/2026 - [12:02:27][INFO]: Status do cliente 1 | Google atualizado com successo!!
+27/08/2026 - [12:02:27][INFO]: Cliente 1 | Google cadastrado com sucesso!!
+27/08/2026 - [12:02:27][INFO]: Status do cliente 1 | Google Atualizada com sucesso!!
+27/08/2026 - [12:02:30][INFO]: Processando cadastro do proprietario: 2 | Microsoft
+27/08/2026 - [12:02:31][INFO]: O banco de dados foi conectado!!!
+27/08/2026 - [12:02:31][INFO]: Status da fatura 2 atualizado para PAGO
+27/08/2026 - [12:02:31][INFO]: Banco de dados desconectado
+27/08/2026 - [12:02:31][INFO]: Status do cliente 2 | Microsoft atualizado com successo!!
+27/08/2026 - [12:02:31][INFO]: Cliente 2 | Microsoft cadastrado com sucesso!!
+27/08/2026 - [12:02:31][INFO]: Status do cliente 2 | Microsoft Atualizada com sucesso!!
+27/08/2026 - [12:02:37][INFO]: Processando cadastro do proprietario: 3 | Amazon
+27/08/2026 - [12:02:37][INFO]: O banco de dados foi conectado!!!
+27/08/2026 - [12:02:37][INFO]: Status da fatura 3 atualizado para PAGO
+27/08/2026 - [12:02:37][INFO]: Banco de dados desconectado
+27/08/2026 - [12:02:37][INFO]: Status do cliente 3 | Amazon atualizado com successo!!
+27/08/2026 - [12:02:37][INFO]: Cliente 3 | Amazon cadastrado com sucesso!!
+27/08/2026 - [12:02:37][INFO]: Status do cliente 3 | Amazon Atualizada com sucesso!!
+27/08/2026 - [12:02:41][INFO]: Processando cadastro do proprietario: 4 | Proprietario_teste
+27/08/2026 - [12:02:42][INFO]: O banco de dados foi conectado!!!
+27/08/2026 - [12:02:42][INFO]: Status da fatura 4 atualizado para PAGO
+27/08/2026 - [12:02:42][INFO]: Banco de dados desconectado
+27/08/2026 - [12:02:42][INFO]: Status do cliente 4 | Proprietario_teste atualizado com successo!!
+27/08/2026 - [12:02:42][INFO]: Cliente 4 | Proprietario_teste cadastrado com sucesso!!
+27/08/2026 - [12:02:42][INFO]: Status do cliente 4 | Proprietario_teste Atualizada com sucesso!!
+27/08/2026 - [12:02:44][ERROR]: Error terminating service process.
+Traceback (most recent call last):
+  File "/home/jeremias/Documentos/pasta_de_projetos/Automatizacao _pagamentos_internacionais/.venv/lib/python3.12/site-packages/selenium/webdriver/common/service.py", line 182, in _terminate_process
+    self.process.terminate()
+  File "/usr/lib/python3.12/subprocess.py", line 2211, in terminate
+    self.send_signal(signal.SIGTERM)
+  File "/usr/lib/python3.12/subprocess.py", line 2203, in send_signal
+    os.kill(self.pid, sig)
+PermissionError: [Errno 13] Permission denied
