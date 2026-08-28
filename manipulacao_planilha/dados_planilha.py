@@ -1,5 +1,7 @@
 import os
 
+import pandas as pd
+
 from adm_logger.loggin import logger
 from manipulacao_dados.banco_dados import BancoDados
 
@@ -67,14 +69,12 @@ class DadosPlanilha:
 
 
     def planilha_de_faturas(self):
-           planilha = pd.read_excel('tabela_completa_faturas.xlsx')
-           return planilha
-
+           print(pd.read_excel('tabela_completa_faturas.xlsx'))
         
 
 if __name__  == "__main__":
     banco = DadosPlanilha()
     banco.dados_db.conectar_banco()
     banco.juncao_dados()
-    print(banco.planilha_de_faturas())
+    banco.planilha_de_faturas()
     banco.dados_db.desconectar_banco()
