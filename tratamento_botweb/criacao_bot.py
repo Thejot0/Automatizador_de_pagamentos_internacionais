@@ -128,47 +128,50 @@ class WebBot:
 
             except TimeoutError:
                 self.logger.exception(f'Elemento do proprietario: {dados_clientes['id']} | {dados_clientes["Proprietario"]} não encontrado')
-                raise 
+                continue
 
             except ConnectionError:
                 self.logger.error('Erro de conexão.\n',
                                 f'Não foi possivel cadastrar cliente: {dados_clientes["id"]} | {dados_clientes["Proprietario"]}')
-                raise 
+                continue
 
             except Exception as erro:
                 self.logger.exception(f'Houve um erro desconhecido ao tentar cadastrar {dados_clientes["id"]} | {dados_clientes["Proprietario"]}. Erro: {erro}')  # noqa: TRY401
-                raise
+                continue
 
 
             try:
-                WebDriverWait(self.bot, 30).until(
-                                EC.element_to_be_clickable((
-                                    By.CSS_SELECTOR, 'span[class="l4V7wb Fxmcue"]'
-                                    ))
-                                ).click()
+                if forma_pagamento:
 
-                self.atualizar_status(dados_clientes['id'])
-                self.logger.info(f'Status do cliente {dados_clientes["id"]} | {dados_clientes["Proprietario"]} atualizado com successo!!')
-                self.logger.info(f'Cliente {dados_clientes["id"]} | {dados_clientes["Proprietario"]} cadastrado com sucesso!!')
+                    WebDriverWait(self.bot, 30).until(
+                                    EC.element_to_be_clickable((
+                                        By.CSS_SELECTOR, 'span[class="l4V7wb Fxmcue"]'
+                                        ))
+                                    ).click()
 
-                dados.loc[_, "status"] = "PAGO"
-                dados.to_excel("tabela_final.xlsx", index=False, header=True)
-                self.logger.info(f'Status do cliente {dados_clientes["id"]} | {dados_clientes["Proprietario"]} Atualizada com sucesso!!')
+                    self.atualizar_status(dados_clientes['id'])
+                    self.logger.info(f'Status do cliente {dados_clientes["id"]} | {dados_clientes["Proprietario"]} atualizado com successo!!')
+                    self.logger.info(f'Cliente {dados_clientes["id"]} | {dados_clientes["Proprietario"]} cadastrado com sucesso!!')
+
+                    dados.loc[_, "status"] = "PAGO"
+                    dados.to_excel("tabela_final.xlsx", index=False, header=True)
+                    self.logger.info(f'Status do cliente {dados_clientes["id"]} | {dados_clientes["Proprietario"]} Atualizada com sucesso!!')
 
 
-                WebDriverWait(self.bot, 30).until(
-                    EC.element_to_be_clickable((
-                        By.LINK_TEXT, 'Enviar outra resposta'
-                        ))
-                    ).click()
+                    WebDriverWait(self.bot, 30).until(
+                        EC.element_to_be_clickable((
+                            By.LINK_TEXT, 'Enviar outra resposta'
+                            ))
+                        ).click()
 
             except TimeoutError as erro:
                 self.logger.error(f'Elemento não encontrado {erro}')
-                raise
+                continue
 
             except ConnectionError:
                 self.logger.error('Erro ao tentar finalizar cadastro de cliente\n',
                                 'Conexão caiu')
+                continue
 
 
 if __name__ == "__main__":
